@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Crystal's - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Crystal Star
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2023/02/15/20/37/ai-generated-7792622_1280.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Crystal Star! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Hi! I'm Crystal, a curious and adventurous soul who loves exploring new ideas and creative projects. By day, I'm a graphic designer, crafting visual stories that capture the essence of brands and bring concepts to life. By night, I’m an avid traveler, always seeking out new cultures, foods, and hidden gems around the world.
+            When I'm not designing or planning my next trip, you can find me reading mystery novels, experimenting with photography, or trying to perfect my latest cooking recipe. I believe in the power of storytelling, whether it's through art, travel, or conversation, and I'm always excited to connect with others who share that passion.
+
+            Let’s connect and create something amazing together!
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_1280.jpg"/>
+            <h6>Python</h6>
+            <p>5 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2019/10/03/12/12/programmer-4523101_1280.jpg"/>
+            <h6>Java</h6>
+            <p>2 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2017/10/31/11/30/binary-2904980_1280.jpg"/>
+            <h6>Data Science</h6>
+            <p>5 years experience</p>
+          </div> 
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Cityscape Reimagined</h3>
+            <ul>
+              <li>Led the design and branding for a digital art project transforming urban cityscapes into interactive visuals. The project won Best Digital Art Installation at the 2023 International Art Expo.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>EcoGreens App</h3>
+            <ul>
+              <li>Designed the user interface for EcoGreens, an app helping users track their environmental impact. The app has garnered 50,000+ downloads and promotes sustainable living.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Global Flavors Cookbook</h3>
+            <ul>
+              <li>ollaborated with chefs worldwide to create a digital cookbook celebrating global cuisine. My food photography contributed to a successful launch with increased social media engagement.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Crystal's creativity and attention to detail were crucial to the success
+          of the Cityscape Reimagined project. Her ability to blend art and technology produced stunning, 
+          interactive designs that wowed audiences.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Crystal's work on the EcoGreens app was exceptional. She designed an intuitive, user-friendly 
+          interface that perfectly aligned with our sustainability goals. Her passion for eco-conscious design truly stands out.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Crystal brought an incredible vision to the Global Flavors Cookbook project. Her food styling and photography 
+          turned simple dishes into works of art, helping the book connect with a global audience. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <!-- <button id="recommend_btn" onclick="addRecommendation()">Submit</button> -->
+            <button id="recommend_btn" onclick="addRecommendation()">Add Recommendation</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+    </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for leaving a recommendation</h3>
+      <button onclick="showPopup(true)">Ok</button>
+    </div>
+  </body>
+</html>
